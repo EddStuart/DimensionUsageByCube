@@ -1,0 +1,12 @@
+['Position']=N:
+IF(
+ TABDIM(!}Cubes,NUMBR(!zCubeDim)) @=
+!}Dimensions,
+ NUMBR(!zCubeDim),
+ 0
+);
+['Exists']=s:
+ IF(['Position']>0,
+ 'X',
+ ''
+); 
